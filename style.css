@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:ital,wght@0,300;1,300&family=Source+Sans+Pro:wght@300&display=swap');
+
+:root{
+  --primary:#F6D167;
+  --background-color:#fcde67;
+}
+body{
+margin: 0;
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+max-width: 100%;
+align-items: center;
+margin: auto;
+}
+
+.screen {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+.left{
+  margin: 5rem 0rem;
+  left: 0;
+ background: url("banana.gif") no-repeat;
+}
+.right {
+  right: 0;
+  background-color:var(--background-color);
+}
+#app-title{
+  margin-top: 5rem;
+}
+#input-txt,#output{
+  height: 15vh;
+   width: 60%;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  border: 2px solid black;
+ 
+}
+#input-txt::placeholder{
+  color:black;
+  font-size: 0.8rem;
+}
+
+#btnTranslate{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+i{
+  color: black;
+  font-size: 2.5rem;
+}
+
+.list-item-inline{
+  display: inline;
+  list-style: none;
+  padding: 1.5rem;
+}
+
+.footer{
+text-align: center;  
+}
